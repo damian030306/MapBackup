@@ -37,7 +37,7 @@ namespace MapBackupConsoleAppFramework
 
                 Directory.Delete(destDirName + @"\temp", true);
                 int czas = Int32.Parse(ConfigurationManager.AppSettings.Get("TimeInMinutes"));
-                Console.WriteLine($"Skopiowano & " + date1.ToString("HH - mm_ss") + $"Oczekiwanie {czas}");
+                Console.WriteLine($"Skopiowano & " + date1.ToString("HH - mm_ss") + $" Oczekiwanie {czas}");
                 Thread.Sleep(czas * 60 * 1000);
 
             }
